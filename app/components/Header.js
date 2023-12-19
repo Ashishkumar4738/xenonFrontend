@@ -75,13 +75,7 @@ const CustomeMobileButton = ({ href, title, className = "", toggle }) => {
       onClick={handleClick}
     >
       {title}
-      {/* <span
-        className={`h-[1px] bg-light dark:bg-dark  inline-block  ${
-          pathname === href ? "w-full" : "w-0"
-        } group-hover:w-full absolute left-0 -bottom-0.5 transition-[width] ease duration-350 `}
-      >
-        &nbsp;
-      </span> */}
+      
     </button>
   );
 };

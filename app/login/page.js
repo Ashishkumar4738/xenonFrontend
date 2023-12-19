@@ -38,8 +38,7 @@ const Login = () => {
         console.log(responseData)
         if(responseData.success){
           localStorage.setItem("auth-token", responseData.jwtToken);
-
-          router.back();
+          router.push("/");
         }else{
           router.push("/register");
         }
