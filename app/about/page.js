@@ -3,8 +3,10 @@ import React, { useEffect, useRef } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import { useInView, useMotionValue, useSpring } from "framer-motion";
+import { useRouter } from "next/navigation";
 
 const AnimatedNumber = ({ value }) => {
+  const router = useRouter();
   const ref = useRef(null);
 
   const motionValue = useMotionValue(0);
@@ -18,6 +20,9 @@ const AnimatedNumber = ({ value }) => {
   }, [isInView, value, motionValue]);
 
   useEffect(() => {
+    if(!localStorage.getItem("auth-token")){
+      router.push("/login");
+    }
     springValue.on("change", (latest) => {
       if (ref.current && latest.toFixed(0) <= value) {
         ref.current.textContent = latest.toFixed(0);
