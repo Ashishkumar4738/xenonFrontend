@@ -140,7 +140,7 @@ const handleLogout=()=>{
               className="ml-6"
             />
            
-            <h1 className=" ml-4 relative group  text-xs border-2 border-dark dark:border-light hover:border-light px-2 m-auto py-1 rounded-xl font-bold  hover:bg-dark hover:text-light dark:hover:bg-light dark:hover:text-dark  " onClick={handleLogout} >Log Out</h1>
+            <h1 className=" ml-4 relative group  text-xs border-2 border-dark dark:border-light hover:border-light px-2 m-auto py-1 rounded-xl font-bold  hover:bg-dark hover:text-light dark:hover:bg-light dark:hover:text-dark cursor-pointer " onClick={handleLogout} >Log Out</h1>
 
           </nav>
 

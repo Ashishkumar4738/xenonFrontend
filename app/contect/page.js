@@ -142,7 +142,7 @@ const Contect = () => {
               
               </label>
               <hr className="border-black border " />
-            <p className="text-xs text-right py-3 " >Forget password? <span className="underline underline-offset-1 cursor-pointer text-red-700 font-semibold " > <i>Click here</i></span> </p>
+           
           <button type="submit" disabled={loading} className="border w-[80%] lg:w-[90%] m-auto py-1 rounded-2xl bg-white hover:bg-cyan-400 text-black text-xl font-semibold mt-4 " >
             {loading ? "Sending..." : "Send query"}
           </button>
