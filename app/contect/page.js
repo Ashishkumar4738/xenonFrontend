@@ -3,7 +3,7 @@
 import React,{ useEffect,useState } from 'react'
 import { useRouter } from 'next/navigation';
 import {motion} from "framer-motion";
-const url = "https://ashishkumar-senonapi.onrender.com/"
+const url = "https://ashishkumar-senonapi.onrender.com"
 const Contect = () => {
     const router = useRouter();
   useEffect(()=>{
