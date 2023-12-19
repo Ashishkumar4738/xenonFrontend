@@ -215,15 +215,10 @@ const handleLogout=()=>{
                 className={` `}
                 toggle={handleClick}
               />
+              
               <CustomeMobileLink
-                href="/projects"
-                title="Projects"
-                className={` `}
-                toggle={handleClick}
-              />
-              <CustomeMobileLink
-                href="/certificates"
-                title="Certificates"
+                href="/contect"
+                title="Contect Us"
                 className={` `}
                 toggle={handleClick}
               />
