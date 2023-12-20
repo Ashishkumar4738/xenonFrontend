@@ -1,3 +1,13 @@
+<<<<<<< HEAD
+=======
+Round 2 Problem (Frontend code is here)
+
+https://xenon-frontend-ten.vercel.app  (This is the working link of this project)
+
+This frontend code is deployed on vercel plateform for easy access.
+
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+>>>>>>> 22ce4b715937ccf6ebd4b217a56c9fd0f8c209cb
 
 # Car Selling App
 
