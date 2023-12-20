@@ -1,14 +1,3 @@
-<<<<<<< HEAD
-=======
-Round 2 Problem (Frontend code is here)
-
-https://xenon-frontend-ten.vercel.app  (This is the working link of this project)
-
-This frontend code is deployed on vercel plateform for easy access.
-
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
->>>>>>> 22ce4b715937ccf6ebd4b217a56c9fd0f8c209cb
-
 # Car Selling App
 
 Welcome to the Car Selling App project! This application is designed to facilitate the buying and selling of cars. The frontend of the app is built using Next.js, Tailwind CSS, and Framer Motion, providing a smooth and responsive user interface. Below, you'll find information on the features, technologies used, and instructions on setting up the project.
