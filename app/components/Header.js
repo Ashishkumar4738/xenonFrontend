@@ -11,7 +11,7 @@ import {
   MoonIcon,
 } from "./Icons";
 import useThemeSwitcher from "./Hooks/useThemeSwitcher";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const CustomeLink = ({ href, title, className = "" }) => {
   const pathname = usePathname();
@@ -31,7 +31,10 @@ const CustomeLink = ({ href, title, className = "" }) => {
 const CustimeButton = ({ href, title, className = "" }) => {
   const pathname = usePathname();
   return (
-    <Link href={href} className={`${className} relative group  text-xs border-2 border-dark dark:border-light hover:border-light px-2 m-auto py-1 rounded-xl font-bold  hover:bg-dark hover:text-light dark:hover:bg-light dark:hover:text-dark  `}>
+    <Link
+      href={href}
+      className={`${className} relative group  text-xs border-2 border-dark dark:border-light hover:border-light px-2 m-auto py-1 rounded-xl font-bold  hover:bg-dark hover:text-light dark:hover:bg-light dark:hover:text-dark  `}
+    >
       {title}
     </Link>
   );
@@ -75,7 +78,6 @@ const CustomeMobileButton = ({ href, title, className = "", toggle }) => {
       onClick={handleClick}
     >
       {title}
-      
     </button>
   );
 };
@@ -88,10 +90,10 @@ export default function Header() {
   const handleClick = () => {
     setOpen(!isOpen);
   };
-const handleLogout=()=>{
-  localStorage.removeItem("auth-token");
-  router.push("/login");
-}
+  const handleLogout = () => {
+    localStorage.removeItem("auth-token");
+    router.push("/login");
+  };
   return (
     <>
       <header className="flex dark:bg-dark dark:text-light justify-between content-center items-center px-24 z-30 w-full h-14 mt-2 ">
@@ -127,15 +129,14 @@ const handleLogout=()=>{
               title="Contect Us"
               className={`mx-4 `}
             />
-            
-            <CustimeButton 
-              href="/login"
-              title="Log In"
-              className="ml-6"
-            />
-           
-            <h1 className=" ml-4 relative group  text-xs border-2 border-dark dark:border-light hover:border-light px-2 m-auto py-1 rounded-xl font-bold  hover:bg-dark hover:text-light dark:hover:bg-light dark:hover:text-dark cursor-pointer " onClick={handleLogout} >Log Out</h1>
+            <CustimeButton href="/login" title="Log In" className="ml-6" />
 
+            <h1
+              className=" ml-4 relative group  text-xs border-2 border-dark dark:border-light hover:border-light px-2 m-auto py-1 rounded-xl font-bold  hover:bg-dark hover:text-light dark:hover:bg-light dark:hover:text-dark cursor-pointer "
+              onClick={handleLogout}
+            >
+              Log Out
+            </h1>
           </nav>
 
           <nav className="flex justify-between items-center dark:bg-dark ">
@@ -209,7 +210,7 @@ const handleLogout=()=>{
                 className={` `}
                 toggle={handleClick}
               />
-              
+
               <CustomeMobileLink
                 href="/contect"
                 title="Contect Us"
@@ -222,8 +223,12 @@ const handleLogout=()=>{
                 className={` `}
                 toggle={handleClick}
               />
-              <h1 className="dark:text-dark text-light border-2 px-2 rounded-lg border-light dark:border-dark " onClick={handleLogout} >Log Out</h1>
-              
+              <h1
+                className="dark:text-dark text-light border-2 px-2 rounded-lg border-light dark:border-dark "
+                onClick={handleLogout}
+              >
+                Log Out
+              </h1>
             </nav>
 
             <nav className="flex justify-between items-center mt-1 rounded-lg flex-wrap ">

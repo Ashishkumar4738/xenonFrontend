@@ -1,36 +1,102 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Car Selling App
 
-First, run the development server:
+Welcome to the Car Selling App project! This application is designed to facilitate the buying and selling of cars. The frontend of the app is built using Next.js, Tailwind CSS, and Framer Motion, providing a smooth and responsive user interface. Below, you'll find information on the features, technologies used, and instructions on setting up the project.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+In the backend, I use a Node.js API for authentication and to process queries. It is deployed on the Render website.
+This is the link of my backend code link:
+
+https://github.com/Ashishkumar4738/xenonapi
+
+## Working Link
+
+https://xenon-frontend-ten.vercel.app
+
+
+## Features
+
+### 1.User Authentication:
+Users can register for an account.
+Users can log in and log out securely.
+
+### 2.Car Listings:
+Users can view a list of available cars for sale.
+Detailed information about each car is displayed.
+
+### 3.Query Submission:
+Users can submit queries or requests regarding specific cars.
+
+## Technologies Used
+
+### Next.js: 
+A React framework for building server-rendered and statically generated web applications.
+
+### Tailwind CSS: 
+A utility-first CSS framework for building modern designs.
+
+### Framer Motion:
+A React library for creating smooth animations.
+
+## Setup Instructions
+
+Follow these steps to set up and run the Car Selling App locally:
+
+### Clone the Repository:
+```
+git clone https://github.com/Ashishkumar4738/xenonFrontend/tree/main
+```
+### Install Dependencies:
+
+```
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Environment Variables:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Create a `.env` file in the root directory.
+Add the necessary environment variables, including database connection details, API keys, etc.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Run the Application:
+```
+yarn dev
+```
 
-## Learn More
+## Contribution Guidelines
 
-To learn more about Next.js, take a look at the following resources:
+Contributions to improve and enhance the Car Selling App are welcome! If you have bug fixes, new features, or improvements, please follow these steps:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1.Fork the repository.
+Create a new branch for your changes.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+2.Make your changes and test them.
 
-## Deploy on Vercel
+3.Submit a pull request with a clear description of your changes.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+## Features
+
+- Light/dark mode toggle
+- Live previews
+- Fullscreen mode
+- Cross platform
+
+
+## Screenshots
+### Laptop view
+![App Screenshot](https://github.com/Ashishkumar4738/xenonFrontend/blob/main/Screenshot%202023-12-20%20180846.png?raw==true)
+
+![App Screenshot](https://github.com/Ashishkumar4738/xenonFrontend/blob/main/Screenshot%202023-12-20%20181050.png?raw==true)
+
+![App Screenshot](https://github.com/Ashishkumar4738/xenonFrontend/blob/main/Screenshot%202023-12-20%20180955.png?raw==true)
+
+![App Screenshot](https://github.com/Ashishkumar4738/xenonFrontend/blob/main/Screenshot%202023-12-20%20181012.png?raw==true)
+
+### Mobile View 
+
+![App Screenshot](https://github.com/Ashishkumar4738/xenonFrontend/blob/main/Screenshot%202023-12-20%20181150.png?raw==true)
+
+![App Screenshot](https://github.com/Ashishkumar4738/xenonFrontend/blob/main/Screenshot%202023-12-20%20181204.png?raw==true)
+
+![App Screenshot](https://github.com/Ashishkumar4738/xenonFrontend/blob/main/Screenshot%202023-12-20%20181221.png?raw==true)
